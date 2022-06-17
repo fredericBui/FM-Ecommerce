@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="style.css" rel="stylesheet">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+<body>
+
+  <nav>
+    <div id="logo">
+      <img src="images/logo.svg" />
+    </div>
+    <ul id="menu">
+      <li>
+        <a href="#">Collections</a>
+      </li>
+      <li>
+        <a href="#">Men</a>
+      </li>
+      <li>
+        <a href="#">Women</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <div id="profilMenu">
+      <img id="cartImg" src="images/icon-cart.svg" />
+      <img id="profilImg" src="images/image-avatar.png" />
+    </div>
+  </nav>
+
+  <hr>
+
+  <section>
+    <article id="produit">
+      <img src="images/image-product-1.jpg" />
+      <div id="imgGallery">
+        <img src="images/image-product-1-thumbnail.jpg" />
+        <img src="images/image-product-2-thumbnail.jpg" />
+        <img src="images/image-product-3-thumbnail.jpg" />
+        <img src="images/image-product-4-thumbnail.jpg" />
+      </div>
+    </article>
+    <article id="description">
+      <b id="brand">Sneaker Company</b>
+      
+      <h1 id="productName">Fall Limited Edition Sneakers</h1>
+      
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      
+      <b id="price">$125.00</b>
+      <b id="reductionPourcent">50%</b>
+      <p id="initialPrice"><s>$250.00</s></p>
+      <div id="cartAction">
+        <div>
+          <button>
+            <img src="images/icon-minus.svg" />
+          </button>
+          <b>0</b>
+          <button>
+            <img src="images/icon-plus.svg" />
+          </button>
+        </div>  
+        <button id="btnAddToCart">
+          <img src="images/icon-cart.svg" />
+          <span>Add to cart</span>
+        </button>
+      </div>
+    </article>
+  </section>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Frédéric Bui</a>.
+  </div>
+</body>
+</html>
