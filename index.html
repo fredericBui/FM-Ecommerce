@@ -33,8 +33,8 @@
       </li>
     </ul>
     <div id="profilMenu">
-      <img id="cartImg" src="images/icon-cart.svg" />
-      <img id="profilImg" src="images/image-avatar.png" />
+      <img id="cartImg" src="images/icon-cart.svg" onclick="cartDisplay()"/>
+      <img id="profilImg" src="images/image-avatar.png"/>
       <div id="cartDisplay">
         <p>Cart</p>
         <hr>
@@ -49,14 +49,19 @@
 
   <section>
     <article id="produit">
-      <img src="images/image-product-1.jpg" />
+      <img id="imgZoom" src="images/image-product-1.jpg" onclick="produitModalDisplay()"/>
       <div id="imgGallery">
-        <img src="images/image-product-1-thumbnail.jpg" />
-        <img src="images/image-product-2-thumbnail.jpg" />
-        <img src="images/image-product-3-thumbnail.jpg" />
-        <img src="images/image-product-4-thumbnail.jpg" />
+        <img id="imgGallery1" src="images/image-product-1-thumbnail.jpg" onclick="produitModalDisplay()"/>
+        <img id="imgGallery2" src="images/image-product-2-thumbnail.jpg" onclick="produitModalDisplay()"/>
+        <img id="imgGallery3" src="images/image-product-3-thumbnail.jpg" onclick="produitModalDisplay()"/>
+        <img id="imgGallery4" src="images/image-product-4-thumbnail.jpg" onclick="produitModalDisplay()"/>
       </div>
     </article>
+    <div id="produitModal">
+        <div id="imgGalleryModal">
+          <img src="images/image-product-1.jpg" />
+        </div>
+    </div>
     <article id="description">
       <b id="brand">Sneaker Company</b>
       
@@ -91,5 +96,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Frédéric Bui</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
