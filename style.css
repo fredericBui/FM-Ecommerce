@@ -121,7 +121,11 @@ section #produit img {
     border-radius: 0.5em;
 }
 
-#produitModal {
+section #produit #imgZoom:hover {
+    cursor: pointer;
+}
+
+#produitBackgroundModal {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -130,14 +134,91 @@ section #produit img {
     background-color: rgba(0, 0, 0, 0.788);
     z-index: 1;
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#produitModal #imgGalleryModal{
-    display: none;
+#produitBackgroundModal #produitModal{
+    width: 40%;
 }
 
-#produitModal #imgGalleryModal img{
-    display: grid;
+#produitBackgroundModal #produitModal #produitModalHeader{
+    display: flex;
+    justify-content: end;
+}
+
+#produitBackgroundModal #produitModal #produitModalHeader #closeModal:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+#produitBackgroundModal #produitModalHeader img{
+    width: 5%;
+    padding-bottom: 1em;
+}
+
+#produitBackgroundModal #produitModalBody{
+    position: relative;
+}
+
+#produitBackgroundModal #produitModalBody #previousProduitModalBody{
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    left: -4%;
+    top: 45%;
+    border-radius: 50%;
+    border: none;
+}
+
+#produitBackgroundModal #produitModalBody #previousProduitModalBody img{
+    width: 50%;
+}
+
+#produitBackgroundModal #produitModalBody #previousProduitModalBody img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+#produitBackgroundModal #produitModalBody #nextProduitModalBody{
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    right: -4%;
+    top: 45%;
+    border-radius: 50%;
+    border: none;
+}
+
+#produitBackgroundModal #produitModalBody #nextProduitModalBody img{
+    width: 50%;
+}
+
+#produitBackgroundModal #produitModalBody #nextProduitModalBody img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+#produitBackgroundModal #produitModalBody img{
+    width: 100%;
+    border-radius: 1em;
+}
+
+#produitBackgroundModal #produitModalFooter{
+    display: flex;
+    padding: 2em 2em;
+    justify-content: space-around;
+}
+
+#produitBackgroundModal #produitModalFooter img{
+    width: 20%;
+    border-radius: 1em;
+}
+
+#produitBackgroundModal #produitModalFooter img:hover{
+    filter: brightness(60%);
+    cursor: pointer;
 }
 
 section #produit #imgGallery{
@@ -212,6 +293,11 @@ section #description #cartAction #btnAddToCart{
     border-radius: 1em;
     display: flex;
 }
+
+section #description #cartAction #btnAddToCart:hover{
+    opacity: 50%;
+}
+
 
 section #description #cartAction #btnAddToCart img{
     filter: brightness(0) invert(1);

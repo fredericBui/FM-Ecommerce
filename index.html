@@ -57,10 +57,27 @@
         <img id="imgGallery4" src="images/image-product-4-thumbnail.jpg" onclick="produitModalDisplay()"/>
       </div>
     </article>
-    <div id="produitModal">
-        <div id="imgGalleryModal">
-          <img src="images/image-product-1.jpg" />
+    <div id="produitBackgroundModal"  onclick="produitBackgroundModalUndisplay()">
+      <div id="produitModal">
+        <div id="produitModalHeader">
+          <img id="closeModal" src="images/icon-close.svg" alt="">
         </div>
+        <div id="produitModalBody">
+          <button id="previousProduitModalBody">
+            <img id="previousProduitImg" src="images/icon-previous.svg" alt="">
+          </button>
+          <img src="images/image-product-1.jpg" />
+          <button id="nextProduitModalBody">
+            <img id="nextProduitImg" src="images/icon-next.svg" alt="">
+          </button>
+        </div>
+        <div id="produitModalFooter">
+          <img src="images/image-product-1-thumbnail.jpg"/>
+          <img src="images/image-product-2-thumbnail.jpg"/>
+          <img src="images/image-product-3-thumbnail.jpg"/>
+          <img src="images/image-product-4-thumbnail.jpg"/>
+        </div>
+      </div>
     </div>
     <article id="description">
       <b id="brand">Sneaker Company</b>
@@ -75,11 +92,11 @@
       <p id="initialPrice"><s>$250.00</s></p>
       <div id="cartAction">
         <div>
-          <button>
+          <button onclick="decreaseCompteurArticle()">
             <img src="images/icon-minus.svg" />
           </button>
-          <b>0</b>
-          <button>
+          <b id="compteurArticle">0</b>
+          <button onclick="increaseCompteurArticle()">
             <img src="images/icon-plus.svg" />
           </button>
         </div>  

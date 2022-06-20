@@ -45,5 +45,24 @@ imgGallery4.addEventListener("mouseover", function( event ) {
 });
 
 function produitModalDisplay(){
-    document.getElementById("produitModal").style.display = "block";
+    document.getElementById("produitBackgroundModal").style.display = "flex";
+}
+
+function produitBackgroundModalUndisplay(){
+    document.getElementById("produitBackgroundModal").style.display = "none";
+}
+
+let compteurArticle = 0;
+
+
+function decreaseCompteurArticle(){
+    if(compteurArticle>0){
+        compteurArticle -= 1;
+        document.getElementById("compteurArticle").innerHTML = compteurArticle;
+    }
+}
+
+function increaseCompteurArticle(){
+    compteurArticle += 1;
+    document.getElementById("compteurArticle").innerHTML = compteurArticle;
 }
