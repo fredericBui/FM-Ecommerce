@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400;700&display=swap');
 
+:root {
+    --primary-color: #FF7E1B;
+  }
+
 *{
     font-family: 'Kumbh Sans', sans-serif;
 }
 
 body{
     padding: 1% 10%;
+    position: relative;
 }
 
 nav{
@@ -35,6 +40,16 @@ nav #menu{
 
 nav #menu li{
     padding: 0 1em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav #menu li:hover{
+    color: black;
+    font-weight:600;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 nav #menu li a{
@@ -60,9 +75,35 @@ nav #profilMenu #profilImg{
 
 nav #profilMenu #profilImg:hover{
     border-radius: 50%;
-    outline: 2px solid #FF7E1B;
+    outline: 2px solid var(--primary-color);
     outline-offset: -2px;
 }
+
+nav #profilMenu #cartDisplay{
+    background-color: white;
+    width: 250px;
+    top: 100px;
+    border-radius: 0.5em;
+    position: absolute;
+    box-shadow: 0px 7px 8px 2px rgba(128, 128, 128, 0.411);
+}
+
+nav #profilMenu #cartDisplay p{
+    padding: 0em 1em;
+}
+
+nav #profilMenu #cartDisplay hr{
+    margin: 0;
+}
+
+nav #profilMenu #cartDisplay #cartItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0em;
+}
+
+
 
 section {
     display: grid;
@@ -96,7 +137,7 @@ section #produit #imgGallery img:hover{
 }
 
 section #description #brand{
-    color: #FF7E1B;
+    color: var(--primary-color);
     text-transform: uppercase;
 }
 
@@ -111,7 +152,7 @@ section #description #price{
 
 section #description #reductionPourcent{
     background-color: #FFEEE2;
-    color: #FF7E1B;
+    color: var(--primary-color);
     padding: 0.2em 0.5em;
     margin-left: 1em;
     border-radius: 0.5em;
@@ -146,7 +187,7 @@ section #description #cartAction button{
 
 section #description #cartAction #btnAddToCart{
     margin-left: 1em;
-    background-color: #FF7E1B;
+    background-color: var(--primary-color);
     color: white;
     border-radius: 1em;
     display: flex;
