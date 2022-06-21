@@ -124,7 +124,7 @@ nav #profilMenu #profilImg:hover{
 nav #profilMenu #cartDisplay{
     display: none;
     background-color: white;
-    width: 250px;
+    width: 400px;
     top: 100px;
     border-radius: 0.5em;
     position: absolute;
@@ -143,7 +143,34 @@ nav #profilMenu #cartDisplay #cartItems{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3em 0em;
+    padding: 3em 1em;
+}
+
+nav #profilMenu #cartDisplay #cartItems #emptyCart{
+    display: block;
+}
+
+nav #profilMenu #cartDisplay #cartItems #fillCart{
+    display: none;
+}
+
+nav #profilMenu #cartDisplay #cartItems #fillCart #cartGrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+nav #profilMenu #cartDisplay #cartItems #fillCart #cartGrid #cartProduct{
+    width: 100%;
+}
+
+nav #profilMenu #cartDisplay #cartItems #fillCart #cartCheckoutBtn{
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 1em 0;
+    margin: 1em 0;
+    border: none;
+    border-radius: 0.5em;
+    color: white;
 }
 
 #sectionProduit {
