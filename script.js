@@ -79,6 +79,8 @@ function decreaseCompteurArticle(){
     }else if(panier.quantite>0){
         document.getElementById("emptyCart").style.display = "none";
         document.getElementById("fillCart").style.display = "block";
+        document.getElementById("cartProductName").innerHTML = panier.article.name;
+        document.getElementById("cartProductPrice").innerHTML = "$" + panier.article.price + "x"+ panier.quantite + "  <b>$" + (panier.article.price*panier.quantite)+ "</b>"; 
     }
 }
 
@@ -92,7 +94,12 @@ function increaseCompteurArticle(){
     }else if(panier.quantite>0){
         document.getElementById("emptyCart").style.display = "none";
         document.getElementById("fillCart").style.display = "block";
+        document.getElementById("cartProductName").innerHTML = panier.article.name;
+        document.getElementById("cartProductPrice").innerHTML = "$" + panier.article.price + "x"+ panier.quantite + "  <b>$" + (panier.article.price*panier.quantite)+ "</b>"; 
     }
 }
 
+function cartProductDelete(){
+    document.getElementById("cartDisplay").style.display = "none";
+}
 
