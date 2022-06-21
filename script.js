@@ -62,17 +62,20 @@ function produitBackgroundModalUndisplay(){
     document.getElementById("produitBackgroundModal").style.display = "none";
 }
 
-let compteurArticle = 0;
-
+let panier = {
+    quantite: 0,
+    article: products,
+}
 
 function decreaseCompteurArticle(){
-    if(compteurArticle>0){
-        compteurArticle -= 1;
-        document.getElementById("compteurArticle").innerHTML = compteurArticle;
+    if(panier.quantite>0){
+        panier.quantite -= 1;
+        document.getElementById("compteurArticle").innerHTML = panier.quantite;
     }
 }
 
 function increaseCompteurArticle(){
-    compteurArticle += 1;
-    document.getElementById("compteurArticle").innerHTML = compteurArticle;
+    panier.quantite += 1;
+    document.getElementById("compteurArticle").innerHTML = panier.quantite;
 }
+
