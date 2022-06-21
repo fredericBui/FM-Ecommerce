@@ -76,11 +76,14 @@ function decreaseCompteurArticle(){
     if(panier.quantite == 0){
         document.getElementById("emptyCart").style.display = "block";
         document.getElementById("fillCart").style.display = "none";
+        document.getElementById("cartQuantity").style.display = "none";
     }else if(panier.quantite>0){
         document.getElementById("emptyCart").style.display = "none";
         document.getElementById("fillCart").style.display = "block";
         document.getElementById("cartProductName").innerHTML = panier.article.name;
         document.getElementById("cartProductPrice").innerHTML = "$" + panier.article.price + "x"+ panier.quantite + "  <b>$" + (panier.article.price*panier.quantite)+ "</b>"; 
+        document.getElementById("cartQuantity").style.display = "flex";
+        document.getElementById("cartSpanQuantity").innerHTML = panier.quantite;
     }
 }
 
@@ -91,11 +94,14 @@ function increaseCompteurArticle(){
     if(panier.quantite == 0){
         document.getElementById("emptyCart").style.display = "block";
         document.getElementById("fillCart").style.display = "none";
+        document.getElementById("cartQuantity").style.display = "none";
     }else if(panier.quantite>0){
         document.getElementById("emptyCart").style.display = "none";
         document.getElementById("fillCart").style.display = "block";
         document.getElementById("cartProductName").innerHTML = panier.article.name;
         document.getElementById("cartProductPrice").innerHTML = "$" + panier.article.price + "x"+ panier.quantite + "  <b>$" + (panier.article.price*panier.quantite)+ "</b>"; 
+        document.getElementById("cartQuantity").style.display = "flex";
+        document.getElementById("cartSpanQuantity").innerHTML = panier.quantite;
     }
 }
 

@@ -105,6 +105,24 @@ nav #profilMenu {
     align-items: center;
 }
 
+nav #profilMenu #cart{
+    position: relative;
+}
+
+nav #profilMenu #cart #cartQuantity {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 25px;
+    height: 20px;
+    border-radius: 1em;
+    display: none;
+    justify-content: center;
+    color: white;
+    top: -14px;
+    right: -12px;
+}
+
+
 nav #profilMenu #cartImg{
     height: 25%;
     cursor: pointer;
