@@ -399,4 +399,9 @@ section #description #cartAction #btnAddToCart span{
         grid-template-columns: 1fr;
     }
 
+    nav #profilMenu #cartDisplay{
+        width: 100%;
+        left: 0;
+    }
+
 }
