@@ -72,10 +72,25 @@ function decreaseCompteurArticle(){
         panier.quantite -= 1;
         document.getElementById("compteurArticle").innerHTML = panier.quantite;
     }
+
+    if(panier.quantite == 0){
+        document.getElementById("cartItems").innerHTML = "<p>Your cart is empty</p>";
+    }else if(panier.quantite>0){
+        document.getElementById("cartItems").innerHTML = panier.quantite;
+        console.log (panier.quantite);
+    }
 }
 
 function increaseCompteurArticle(){
     panier.quantite += 1;
     document.getElementById("compteurArticle").innerHTML = panier.quantite;
+
+    if(panier.quantite == 0){
+        document.getElementById("cartItems").innerHTML = "<p>Your cart is empty</p>";
+    }else if(panier.quantite>0){
+        document.getElementById("cartItems").innerHTML = panier.quantite;
+        console.log (panier.quantite);
+    }
 }
+
 
