@@ -6,12 +6,24 @@
 
 *{
     font-family: 'Kumbh Sans', sans-serif;
+    list-style-type: none;
 }
 
 body{
     padding: 1% 10%;
     position: relative;
 }
+
+#backgroundDisplay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000ad;
+    display: none;
+}
+
 
 nav{
     display: grid;
@@ -24,6 +36,37 @@ nav>* {
     display: flex;
 }
 
+nav #menuMobile {
+    display: none;
+}
+
+nav #menuMobileSlide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 70%;
+    display: none;
+}
+
+nav #menuMobileSlide #menuMobileClose{
+    cursor: pointer;
+}
+
+nav #menuMobileSlide ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+nav #menuMobileSlide ul li{
+    padding: 1em 0.5em;
+}
+
+nav #menuMobileSlide ul li a{
+    text-decoration: none;
+    color: black;
+}
+
 nav #logo{
     justify-content: center;
     align-items: center;
@@ -34,7 +77,6 @@ nav #logo img {
 }
 
 nav #menu{
-    list-style-type: none;
     align-items: center;
 }
 
@@ -104,24 +146,22 @@ nav #profilMenu #cartDisplay #cartItems{
     padding: 3em 0em;
 }
 
-
-
-section {
+#sectionProduit {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
-section article {
+#sectionProduit article {
     padding: 10%;
 }
 
-section #produit img {
+#sectionProduit #produit img {
     width: 100%;
     border-radius: 0.5em;
 }
 
-section #produit #imgZoom:hover {
+#sectionProduit #produit #imgZoom:hover {
     cursor: pointer;
 }
 
@@ -305,4 +345,31 @@ section #description #cartAction #btnAddToCart img{
 
 section #description #cartAction #btnAddToCart span{
     margin-left: 1em;
+}
+
+@media (max-width: 1000px) { 
+
+    nav{
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    nav #menuMobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav #logo {
+        display: flex;
+        justify-content:flex-start;
+    }
+
+    nav #menu {
+        display: none;
+    }
+
+    #sectionProduit {
+        grid-template-columns: 1fr;
+    }
+
 }

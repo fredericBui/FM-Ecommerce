@@ -9,6 +9,16 @@ function cartDisplay(){
     }
 }
 
+function menuMobileSlideDisplay(){
+    document.getElementById("menuMobileSlide").style.display = "block";
+    document.getElementById("backgroundDisplay").style.display = "block";
+}
+
+function menuMobileSlideUndisplay(){
+    document.getElementById("menuMobileSlide").style.display = "none";
+    document.getElementById("backgroundDisplay").style.display = "none";
+}
+
 let products = {
     name: 'Fall Limited Edition Sneakers',
     price: 125,

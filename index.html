@@ -10,8 +10,33 @@
   <title>Frontend Mentor | E-commerce product page</title>
 
 <body>
-
+  <div id="backgroundDisplay" onclick="menuMobileSlideUndisplay()"></div>
   <nav>
+    <div id="menuMobile" onclick="menuMobileSlideDisplay()">
+      <img src="images/icon-menu.svg" alt="" srcset="">
+    </div>
+    <div id="menuMobileSlide">
+      <ul>
+        <li>
+          <img id="menuMobileClose" src="images/icon-close.svg" alt="" onclick="menuMobileSlideUndisplay()">
+        </li>
+        <li>
+          <a href="#">Collections</a>
+        </li>
+        <li>
+          <a href="#">Men</a>
+        </li>
+        <li>
+          <a href="#">Women</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
     <div id="logo">
       <img src="images/logo.svg" />
     </div>
@@ -47,7 +72,7 @@
 
   <hr>
 
-  <section>
+  <section id="sectionProduit">
     <article id="produit">
       <img id="imgZoom" src="images/image-product-1.jpg" onclick="produitModalDisplay()"/>
       <div id="imgGallery">
@@ -111,7 +136,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Frédéric Bui</a>.
+    Coded by <a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-bui-a20084a4/">Frédéric Bui</a>.
   </div>
   <script src="script.js"></script>
 </body>
